@@ -4,60 +4,99 @@
     <meta charset="UTF-8">
     <title>Розклад занять</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        table { border-collapse: collapse; width: 100%; margin-bottom: 40px; }
-        th, td { border: 1px solid #444; padding: 8px; text-align: center; }
-        th { background-color: #eee; }
-        h2 { margin-top: 40px; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 20px;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .schedule {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+        .schedule th, .schedule td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .schedule th {
+            background-color: #2980b9;
+            color: white;
+        }
+        .day-row {
+            background-color: #ecf0f1;
+            font-weight: bold;
+            text-align: left;
+            padding-left: 10px;
+        }
+        .date-row {
+            background-color: #dff0d8;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
-    <h1>Розклад занять студента: Бащенко Є. В. (11.05.2025 – 08.06.2025)</h1>
 
-    <h2>Понеділок</h2>
-    <table>
-        <tr><th>Дата</th><th>1 пара<br>08:00-09:35</th><th>2 пара<br>09:45-11:20</th><th>3 пара<br>11:45-13:20</th><th>4 пара<br>13:30-15:05</th></tr>
-        <tr>
-            <td>05.05 / 12.05 / 19.05 / 26.05 / 02.06</td>
-            <td>КГОЗ-15 [Лк]<br>ауд. Дистанц.<br>Прокопенко А.Г.</td>
-            <td>ПІК-2017 / СП-2024 [Лк]<br>ауд. Дистанц.<br>Читулян В.О. / Бажан Т.О.</td>
-            <td>АВПЗ-24 / WEB-SP-15 [Лк]<br>ауд. Дистанц.<br>Сватко В.В. / Дзюба В.В.</td>
-            <td>ООП-2016 [Лк]<br>ауд. Дистанц.<br>Вишнівський О.В.</td>
-        </tr>
-    </table>
+<h1>Розклад занять на травень 2025</h1>
 
-    <h2>Вівторок</h2>
-    <table>
-        <tr><th>Дата</th><th>1 пара</th><th>2 пара</th><th>3 пара</th></tr>
+<table class="schedule">
+    <thead>
         <tr>
-            <td>06.05 / 13.05 / 20.05 / 27.05 / 03.06</td>
-            <td>ПІК-2017 [Пз]<br>ауд. 326<br>Читулян В.О.</td>
-            <td>ООП-2016 [Лб/Пз]<br>ауд. 326 / 207<br>Вишнівський О.В.</td>
-            <td>ФВ [Пз]<br>ауд. Стадіон<br>Оленич В.М.</td>
+            <th>Час</th>
+            <th>Предмет</th>
+            <th>Тип</th>
+            <th>Аудиторія</th>
+            <th>Викладач</th>
         </tr>
-    </table>
+    </thead>
+    <tbody>
+        <!-- Понеділок -->
+        <tr><td colspan="5" class="day-row">Понеділок</td></tr>
 
-    <h2>Середа</h2>
-    <table>
-        <tr><th>Дата</th><th>1 пара</th><th>2 пара</th><th>3 пара</th><th>4 пара</th><th>5 пара</th></tr>
-        <tr>
-            <td>07.05 / 14.05 / 21.05 / 28.05 / 04.06</td>
-            <td>WEB-SP-15 [Лб]<br>ауд. 205<br>Дзюба В.В.</td>
-            <td>WEB-SP-15 [Пз]<br>ауд. 310<br>Дзюба В.В.</td>
-            <td>АВПЗ-24 [Пз]<br>ауд. 404<br>Сватко В.В.</td>
-            <td>WEB-SP-15 [Лб]<br>ауд. 207<br>Дзюба В.В.</td>
-            <td>АВПЗ-24 [Пз]<br>ауд. 216<br>Сватко В.В.</td>
-        </tr>
-    </table>
+        <tr><td colspan="5" class="date-row">05.05.2025</td></tr>
+        <tr><td>08:00–09:35</td><td>КГОЗ-15</td><td>Лекція</td><td>Дистанц.</td><td>Прокопенко А.Г.</td></tr>
+        <tr><td>09:45–11:20</td><td>ПІК-2017</td><td>Лекція</td><td>Дистанц.</td><td>Читулян В.О.</td></tr>
+        <tr><td>11:45–13:20</td><td>АВПЗ-24</td><td>Лекція</td><td>Дистанц.</td><td>Сватко В.В.</td></tr>
+        <tr><td>13:30–15:05</td><td>ООП-2016</td><td>Лекція</td><td>Дистанц.</td><td>Вишнівський О.В.</td></tr>
 
-    <h2>П’ятниця</h2>
-    <table>
-        <tr><th>Дата</th><th>1 пара</th><th>2 пара</th></tr>
-        <tr>
-            <td>09.05 / 16.05 / 23.05 / 30.05 / 06.06</td>
-            <td>КГОЗ-15 [Пз/Лб]<br>ауд. 423 / 424<br>Прокопенко А.Г.</td>
-            <td>СП-2024 [Пз]<br>ауд. 207<br>Бажан Т.О.</td>
-        </tr>
-    </table>
+        <tr><td colspan="5" class="date-row">12.05.2025</td></tr>
+        <tr><td>08:00–09:35</td><td>КГОЗ-15</td><td>Лекція</td><td>Дистанц.</td><td>Прокопенко А.Г.</td></tr>
+        <tr><td>09:45–11:20</td><td>СП-2024</td><td>Лекція</td><td>Дистанц.</td><td>Бажан Т.О.</td></tr>
+        <tr><td>11:45–13:20</td><td>WEB-SP-15</td><td>Лекція</td><td>Дистанц.</td><td>Дзюба В.В.</td></tr>
+        <tr><td>13:30–15:05</td><td>ООП-2016</td><td>Лекція</td><td>Дистанц.</td><td>Вишнівський О.В.</td></tr>
+
+        <!-- Вівторок -->
+        <tr><td colspan="5" class="day-row">Вівторок</td></tr>
+
+        <tr><td colspan="5" class="date-row">06.05.2025</td></tr>
+        <tr><td>08:00–09:35</td><td>ПІК-2017</td><td>Практ.</td><td>ауд. 326</td><td>Читулян В.О.</td></tr>
+        <tr><td>09:45–11:20</td><td>ООП-2016</td><td>Лаб.</td><td>ауд. 326</td><td>Вишнівський О.В.</td></tr>
+        <tr><td>11:45–13:20</td><td>ФВ</td><td>Практ.</td><td>Стадіон</td><td>Оленич В.М.</td></tr>
+
+        <!-- Середа -->
+        <tr><td colspan="5" class="day-row">Середа</td></tr>
+
+        <tr><td colspan="5" class="date-row">07.05.2025</td></tr>
+        <tr><td>08:00–09:35</td><td>WEB-SP-15</td><td>Лаб.</td><td>ауд. 205</td><td>Дзюба В.В.</td></tr>
+        <tr><td>09:45–11:20</td><td>WEB-SP-15</td><td>Практ.</td><td>ауд. 310</td><td>Дзюба В.В.</td></tr>
+        <tr><td>11:45–13:20</td><td>АВПЗ-24</td><td>Практ.</td><td>ауд. 404</td><td>Сватко В.В.</td></tr>
+        <tr><td>13:30–15:05</td><td>WEB-SP-15</td><td>Лаб.</td><td>ауд. 207</td><td>Дзюба В.В.</td></tr>
+        <tr><td>15:15–16:50</td><td>АВПЗ-24</td><td>Практ.</td><td>ауд. 216</td><td>Сватко В.В.</td></tr>
+
+        <!-- П’ятниця -->
+        <tr><td colspan="5" class="day-row">П’ятниця</td></tr>
+
+        <tr><td colspan="5" class="date-row">09.05.2025</td></tr>
+        <tr><td>08:00–09:35</td><td>КГОЗ-15</td><td>Практ.</td><td>ауд. 423</td><td>Прокопенко А.Г.</td></tr>
+        <tr><td>09:45–11:20</td><td>СП-2024</td><td>Практ.</td><td>ауд. 207</td><td>Бажан Т.О.</td></tr>
+
+    </tbody>
+</table>
+
 </body>
 </html>
