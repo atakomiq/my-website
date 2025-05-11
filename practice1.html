@@ -14,29 +14,26 @@
             text-align: center;
             color: #2c3e50;
         }
-        .schedule {
+        table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 30px;
         }
-        .schedule th, .schedule td {
+        th, td {
             border: 1px solid #ccc;
-            padding: 10px;
+            padding: 8px 10px;
             text-align: center;
         }
-        .schedule th {
+        th {
             background-color: #2980b9;
             color: white;
         }
-        .day-row {
-            background-color: #ecf0f1;
-            font-weight: bold;
-            text-align: left;
-            padding-left: 10px;
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
         }
-        .date-row {
-            background-color: #dff0d8;
-            font-style: italic;
+        .day-name {
+            font-weight: bold;
+            color: #2c3e50;
         }
     </style>
 </head>
@@ -44,9 +41,11 @@
 
 <h1>Розклад занять на травень 2025</h1>
 
-<table class="schedule">
+<table>
     <thead>
         <tr>
+            <th>Дата</th>
+            <th>День</th>
             <th>Час</th>
             <th>Предмет</th>
             <th>Тип</th>
@@ -55,46 +54,28 @@
         </tr>
     </thead>
     <tbody>
-        <!-- Понеділок -->
-        <tr><td colspan="5" class="day-row">Понеділок</td></tr>
+        <tr><td>05.05.2025</td><td class="day-name">Понеділок</td><td>08:00–09:35</td><td>КГОЗ-15</td><td>Лекція</td><td>Дистанц.</td><td>Прокопенко А.Г.</td></tr>
+        <tr><td>05.05.2025</td><td>Понеділок</td><td>09:45–11:20</td><td>ПІК-2017</td><td>Лекція</td><td>Дистанц.</td><td>Читулян В.О.</td></tr>
+        <tr><td>05.05.2025</td><td>Понеділок</td><td>11:45–13:20</td><td>АВПЗ-24</td><td>Лекція</td><td>Дистанц.</td><td>Сватко В.В.</td></tr>
+        <tr><td>05.05.2025</td><td>Понеділок</td><td>13:30–15:05</td><td>ООП-2016</td><td>Лекція</td><td>Дистанц.</td><td>Вишнівський О.В.</td></tr>
 
-        <tr><td colspan="5" class="date-row">05.05.2025</td></tr>
-        <tr><td>08:00–09:35</td><td>КГОЗ-15</td><td>Лекція</td><td>Дистанц.</td><td>Прокопенко А.Г.</td></tr>
-        <tr><td>09:45–11:20</td><td>ПІК-2017</td><td>Лекція</td><td>Дистанц.</td><td>Читулян В.О.</td></tr>
-        <tr><td>11:45–13:20</td><td>АВПЗ-24</td><td>Лекція</td><td>Дистанц.</td><td>Сватко В.В.</td></tr>
-        <tr><td>13:30–15:05</td><td>ООП-2016</td><td>Лекція</td><td>Дистанц.</td><td>Вишнівський О.В.</td></tr>
+        <tr><td>06.05.2025</td><td class="day-name">Вівторок</td><td>08:00–09:35</td><td>ПІК-2017</td><td>Практ.</td><td>ауд. 326</td><td>Читулян В.О.</td></tr>
+        <tr><td>06.05.2025</td><td>Вівторок</td><td>09:45–11:20</td><td>ООП-2016</td><td>Лаб.</td><td>ауд. 326</td><td>Вишнівський О.В.</td></tr>
+        <tr><td>06.05.2025</td><td>Вівторок</td><td>11:45–13:20</td><td>ФВ</td><td>Практ.</td><td>Стадіон</td><td>Оленич В.М.</td></tr>
 
-        <tr><td colspan="5" class="date-row">12.05.2025</td></tr>
-        <tr><td>08:00–09:35</td><td>КГОЗ-15</td><td>Лекція</td><td>Дистанц.</td><td>Прокопенко А.Г.</td></tr>
-        <tr><td>09:45–11:20</td><td>СП-2024</td><td>Лекція</td><td>Дистанц.</td><td>Бажан Т.О.</td></tr>
-        <tr><td>11:45–13:20</td><td>WEB-SP-15</td><td>Лекція</td><td>Дистанц.</td><td>Дзюба В.В.</td></tr>
-        <tr><td>13:30–15:05</td><td>ООП-2016</td><td>Лекція</td><td>Дистанц.</td><td>Вишнівський О.В.</td></tr>
+        <tr><td>07.05.2025</td><td class="day-name">Середа</td><td>08:00–09:35</td><td>WEB-SP-15</td><td>Лаб.</td><td>ауд. 205</td><td>Дзюба В.В.</td></tr>
+        <tr><td>07.05.2025</td><td>Середа</td><td>09:45–11:20</td><td>WEB-SP-15</td><td>Практ.</td><td>ауд. 310</td><td>Дзюба В.В.</td></tr>
+        <tr><td>07.05.2025</td><td>Середа</td><td>11:45–13:20</td><td>АВПЗ-24</td><td>Практ.</td><td>ауд. 404</td><td>Сватко В.В.</td></tr>
+        <tr><td>07.05.2025</td><td>Середа</td><td>13:30–15:05</td><td>WEB-SP-15</td><td>Лаб.</td><td>ауд. 207</td><td>Дзюба В.В.</td></tr>
+        <tr><td>07.05.2025</td><td>Середа</td><td>15:15–16:50</td><td>АВПЗ-24</td><td>Практ.</td><td>ауд. 216</td><td>Сватко В.В.</td></tr>
 
-        <!-- Вівторок -->
-        <tr><td colspan="5" class="day-row">Вівторок</td></tr>
+        <tr><td>09.05.2025</td><td class="day-name">П’ятниця</td><td>08:00–09:35</td><td>КГОЗ-15</td><td>Практ.</td><td>ауд. 423</td><td>Прокопенко А.Г.</td></tr>
+        <tr><td>09.05.2025</td><td>П’ятниця</td><td>09:45–11:20</td><td>СП-2024</td><td>Практ.</td><td>ауд. 207</td><td>Бажан Т.О.</td></tr>
 
-        <tr><td colspan="5" class="date-row">06.05.2025</td></tr>
-        <tr><td>08:00–09:35</td><td>ПІК-2017</td><td>Практ.</td><td>ауд. 326</td><td>Читулян В.О.</td></tr>
-        <tr><td>09:45–11:20</td><td>ООП-2016</td><td>Лаб.</td><td>ауд. 326</td><td>Вишнівський О.В.</td></tr>
-        <tr><td>11:45–13:20</td><td>ФВ</td><td>Практ.</td><td>Стадіон</td><td>Оленич В.М.</td></tr>
-
-        <!-- Середа -->
-        <tr><td colspan="5" class="day-row">Середа</td></tr>
-
-        <tr><td colspan="5" class="date-row">07.05.2025</td></tr>
-        <tr><td>08:00–09:35</td><td>WEB-SP-15</td><td>Лаб.</td><td>ауд. 205</td><td>Дзюба В.В.</td></tr>
-        <tr><td>09:45–11:20</td><td>WEB-SP-15</td><td>Практ.</td><td>ауд. 310</td><td>Дзюба В.В.</td></tr>
-        <tr><td>11:45–13:20</td><td>АВПЗ-24</td><td>Практ.</td><td>ауд. 404</td><td>Сватко В.В.</td></tr>
-        <tr><td>13:30–15:05</td><td>WEB-SP-15</td><td>Лаб.</td><td>ауд. 207</td><td>Дзюба В.В.</td></tr>
-        <tr><td>15:15–16:50</td><td>АВПЗ-24</td><td>Практ.</td><td>ауд. 216</td><td>Сватко В.В.</td></tr>
-
-        <!-- П’ятниця -->
-        <tr><td colspan="5" class="day-row">П’ятниця</td></tr>
-
-        <tr><td colspan="5" class="date-row">09.05.2025</td></tr>
-        <tr><td>08:00–09:35</td><td>КГОЗ-15</td><td>Практ.</td><td>ауд. 423</td><td>Прокопенко А.Г.</td></tr>
-        <tr><td>09:45–11:20</td><td>СП-2024</td><td>Практ.</td><td>ауд. 207</td><td>Бажан Т.О.</td></tr>
-
+        <tr><td>12.05.2025</td><td class="day-name">Понеділок</td><td>08:00–09:35</td><td>КГОЗ-15</td><td>Лекція</td><td>Дистанц.</td><td>Прокопенко А.Г.</td></tr>
+        <tr><td>12.05.2025</td><td>Понеділок</td><td>09:45–11:20</td><td>СП-2024</td><td>Лекція</td><td>Дистанц.</td><td>Бажан Т.О.</td></tr>
+        <tr><td>12.05.2025</td><td>Понеділок</td><td>11:45–13:20</td><td>WEB-SP-15</td><td>Лекція</td><td>Дистанц.</td><td>Дзюба В.В.</td></tr>
+        <tr><td>12.05.2025</td><td>Понеділок</td><td>13:30–15:05</td><td>ООП-2016</td><td>Лекція</td><td>Дистанц.</td><td>Вишнівський О.В.</td></tr>
     </tbody>
 </table>
 
